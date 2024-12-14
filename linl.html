@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Student Alarm</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.3/xlsx.full.min.js"></script>
+</head>
+<body background="nature.jpg">
+
+   
+    <div class="wrapper">
+        <h1>00:00:00</h1>
+        <h2>22/11/2024</h2>
+
+        <div class="exel">
+            <h1>Upload Excel File</h1>
+            <input type="file" id="excelFile" accept=".xlsx, .xls" />
+            <div id="result"></div>
+            <button id="stopButton">Stop Sound</button>
+
+        </div>
+        
+        
+
+        <h3>Friday</h3>
+
+        <div class="alarm-info">
+            <h4>Alarm 1: <span id="alarm-time-display1">Not set</span></h4>
+            <h4>Alarm 2: <span id="alarm-time-display2">Not set</span></h4>
+        </div>
+
+        <div class="content">
+            <div class="column">
+                <select id="alarm1-hours">
+                    <option value="Hours" selected hidden>Hours</option>
+                </select>
+            </div>
+            <div class="column">
+                <select id="alarm1-minutes">
+                    <option value="Minutes" selected hidden>Minutes</option>
+                </select>
+            </div>
+            <div class="column">
+                <select id="alarm1-ampm">
+                    <option value="AM/PM" selected hidden>AM/PM</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="column">
+                <select id="alarm2-hours">
+                    <option value="Hours" selected hidden>Hours</option>
+                </select>
+            </div>
+            <div class="column">
+                <select id="alarm2-minutes">
+                    <option value="Minutes" selected hidden>Minutes</option>
+                </select>
+            </div>
+            <div class="column">
+                <select id="alarm2-ampm">
+                    <option value="AM/PM" selected hidden>AM/PM</option>
+                </select>
+            </div>
+        </div>
+        <audio id="birthdaySong" src="iphone_alarm.mp3"></audio>
+
+
+        <button id="set-alarm1">Set Alarm 1</button>
+        <button id="set-alarm2">Set Alarm 2</button>
+    </div>
+
+    <script src="script.js"></script>   
+
+</body>
+</html>

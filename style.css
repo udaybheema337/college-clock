@@ -1,0 +1,201 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #ebeef1; /* Dark grayish-blue background */
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    flex-direction: column;
+}
+
+/* Wrapper */
+.wrapper {
+    background: rgba(0, 0, 0, 0.6); /* Semi-transparent black for contrast */
+    padding: 30px;
+    border-radius: 15px;
+    max-width: 600px;
+    width: 100%;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.7);
+    transition: transform 0.3s ease;
+}
+
+.wrapper:hover {
+    transform: scale(1.05);
+}
+
+/* Heading Styles */
+h1 {
+    font-size: 30px;
+    color: #f5a623; /* Warm, vibrant orange */
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 48px;
+    color: #f1c40f; /* Soft yellow */
+}
+
+h3 {
+    font-size: 49px;
+    color:wheat; /* Rich orange */
+    margin-top: 5px;
+}
+
+h4 {
+    font-size: 20px;
+    color: #16a085; /* Calm teal */
+    margin: 15px 0;
+}
+
+/* Alarm Time Display */
+.alarm-info h4 {
+    font-size: 18px;
+    margin: 15px 0;
+    color: #f39c12; /* Bright yellow-orange */
+}
+
+/* Excel Upload Section */
+.exel {
+    margin-top: 20px;
+}
+
+.exel input {
+    font-size: 18px;
+    padding: 12px;
+    width: 80%;
+    border: none;
+    border-radius: 8px;
+    background-color: #3498db; /* Blue */
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.exel input:hover {
+    background-color: #2980b9; /* Darker blue */
+}
+
+/* Buttons */
+button {
+    background-color: #2ecc71; /* Fresh, calm green */
+    color: #fff;
+    border: none;
+    padding: 12px 25px;
+    font-size: 18px;
+    margin-top: 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background-color: #27ae60; /* Slightly darker green */
+}
+
+button:active {
+    background-color: #1e8449; /* Even darker green */
+    transform: scale(0.98);
+}
+
+/* Stop Button */
+#stopButton {
+    background-color: #e74c3c; /* Vibrant red */
+    font-size: 18px;
+    padding: 12px 25px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#stopButton:hover {
+    background-color: #c0392b; /* Darker red */
+}
+
+#stopButton:active {
+    background-color: #992d22; /* Even darker red */
+    transform: scale(0.98);
+}
+
+/* Select Menus */
+select {
+    width: 100%;
+    padding: 12px;
+    font-size: 18px;
+    background-color: #9b59b6; /* Purple */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+select:focus {
+    background-color: #8e44ad; /* Darker purple */
+    outline: none;
+}
+
+/* Audio Controls */
+audio {
+    display: none;
+}
+
+/* Alarm Info Section */
+.alarm-info {
+    margin-top: 20px;
+}
+
+/* Content Layout */
+.content {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+    gap: 20px;
+}
+
+.column {
+    width: 30%;
+}
+
+@media (max-width: 768px) {
+    .wrapper {
+        padding: 15px;
+        width: 90%;
+    }
+
+    .content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .column {
+        width: 80%;
+        margin-bottom: 15px;
+    }
+
+    h1 {
+        font-size: 45px;
+    }
+
+    h2, h3 {
+        font-size: 20px;
+    }
+
+    button {
+        width: 100%;
+        padding: 12px;
+    }
+
+    #stopButton {
+        width: 100%;
+        padding: 12px;
+    }
+} 
